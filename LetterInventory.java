@@ -74,7 +74,7 @@ public class LetterInventory {
         LetterInventory sum = new LetterInventory("");
         for (int i = 0; i < ALPHABETS; i++) {
             char ch = (char) ('a' + i);
-            int value = elementData[i] - other.get(ch);
+            int value = elementData[i] + other.get(ch);
             sum.set(ch, value);
         }
         return sum;
